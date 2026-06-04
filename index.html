@@ -4,19 +4,6 @@
   <meta charset="UTF-8" />
   <title>Moja pierwsza strona</title>
   <style>
-  </style>
-</head>
-<body>
-  <input type="text" id="text">
-  <button id="click">dodaj</button>
-  <div id="posts">
-    
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-  <meta charset="UTF-8" />
-  <title>Moja pierwsza strona</title>
-  <style>
    .post {
      height: 50px;
      background-color: grey;
@@ -59,39 +46,6 @@ button.addEventListener("click", () => {
     post.innerHTML = "<p class='posttekst'>" + text + "</p>";
 
     posts.prepend(post);
-
-    textInput.value = "";
-});
-
-
-
-
-
-
-  
-</script>
-</html>
-
-
-    
-  </div>
-  
-
-  
-</body>
-<script>
-const textInput = document.getElementById("text");
-const button = document.getElementById("click");
-const posts = document.getElementById("posts");
-
-button.addEventListener("click", () => {
-    const text = textInput.value;
-
-    const post = document.createElement("div");
-
-    post.textContent = text;
-
-    posts.appendChild(post);
 
     textInput.value = "";
 });
