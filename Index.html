@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nasze podróże</title>
+
+  <style>
+    .h1 {
+      background-color: rgb(142, 190, 233);
+      border-radius: 15px;
+      text-align: center;
+      padding: 10px;
+    }
+    .europe {
+      background-color: rgb(142, 190, 233);
+      border-radius: 15px;
+      text-align: left;
+      padding: 10px;
+      width: 455px;
+      height: 420px;
+    }
+    .europe-map {
+      border-radius: 32px;
+      padding: 0px;
+      width: 455px;
+    }
+    .znacznik {
+      border-radius: 32px;
+      padding: 0px;
+      margin: 25px;
+      
+      width: 128px;
+      height: auto;
+      background-color: red;
+      text-align: center;
+      scale:1.5;
+    }
+  body {
+    background-color: #FFC87C;
+  }
+  </style>
+</head>
+
+<body>
+  <h1 class="h1">Nasze podróże</h1>
+  <div class="europe">
+    <p>Europa</p>
+    <img src="europe.png" class="europe-map">
+  </div>
+   <div>
+    <div id="z1" class="znacznik">1 : chorwacja</div>
+   </div>
+</body>
+<script>
+const z = document.getElementById("z1")
+
+
+
+z.addEventListener("click",() => {
+  window.open("chorwacja/chorwacja.html")
+  
+  
+  
+})
+
+
+
+
+</script>
+
+
+
+</html>

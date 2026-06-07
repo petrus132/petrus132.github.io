@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nasze podróże</title>
+
+  <style>
+    .h1 {
+      background-color: rgb(142, 190, 233);
+      border-radius: 15px;
+      text-align: center;
+      padding: 10px;
+    }
+    .rama {
+      background-color: rgb(142, 190, 233);
+      border-radius: 15px;
+      text-align: left;
+      padding: 10px;
+      width: 455px;
+      height: 600px;
+    }
+    .map {
+      border-radius: 32px;
+      padding: 0px;
+      width: 455px;
+      height:auto;
+    }
+    .znacznik {
+      border-radius: 32px;
+      padding: 0px;
+      margin: 25px 25px;
+      width: 128px;
+      height: auto;
+      background-color: red;
+      text-align: center;
+      scale: 1.5;
+    }
+    .wroc {
+      border-radius: 32px;
+      padding: 0px;
+      margin: 25px 25px;
+      position: absolute;
+      width: 128px;
+      height: auto;
+      background-color: rgb(142, 190, 233);
+      text-align: center;
+      scale: 1.5;
+      
+      
+    }
+    body {
+      background-color: #FFC87C;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="h1">Nasze podróże/chorwacja</h1>
+  <div class="rama">
+    <h2 align="center">chorwacja</h2>
+    <img src="chorwacja-mapa.png" class="map">
+  </div>
+   <div>
+    <div class="znacznik" onClick='window.open("pula/pula.html")'>1 : Pula</div>
+    <div class="znacznik" onClick='window.open("nin/nin.html")'>2 : Nin</div>
+   </div>
+  
+</body>
+  <div onclick="history.back()" class="wroc">Wróć</div>
+<script>
+
+</script>
+
+
+
+</html>
